@@ -1,2 +1,1 @@
-# 701Project
- 
+# Personal Dashboard Angular JS Application
