@@ -1,0 +1,33 @@
+$white: #FFFFFF;
+$black: #2221214d;
+
+#quote-box {
+  padding: 2em;
+  background-color: $black;
+  border-radius: 10px;
+  color: $white;
+
+  #text {
+    font-family: "Amiri", serif;
+  }
+  #author {
+    font-family: "Neucha", cursive;
+    font-size: 2.5em;
+  }
+  .btn-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    #tweet-quote {
+      margin-left: 1em;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #quote-box {
+    margin: 0;
+    overflow-y: auto;
+  }
+}

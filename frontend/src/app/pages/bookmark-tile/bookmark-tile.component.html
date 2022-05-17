@@ -1,0 +1,10 @@
+<a [href]="bookmark.link" target="_blank" class="bookmark-tile">
+    <div class="tile-icon" *ngIf="!faviconError">
+        <img [src]="tileIconSrc" alt="" (error)="faviconError=true">
+    </div>
+    <div class="tile-icon fallback" *ngIf="faviconError">
+        {{ bookmark.title.toUpperCase()[0] }}
+    </div>
+    
+    <p class="tile-text">{{ bookmark.title }}</p>
+</a>

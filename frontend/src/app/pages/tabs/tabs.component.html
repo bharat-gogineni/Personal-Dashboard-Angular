@@ -1,0 +1,24 @@
+<div class="tabs">
+    <a [routerLink]="[{ outlets: { outlet: ['lists'] } }]" routerLinkActive="selected" class="tab lists-tab">
+        <div class="tab-tile">
+            <i class="material-icons-outlined" style="font-weight: bold;">list</i>
+        </div>
+    </a>
+    <a [routerLink]="[{ outlets: { outlet: ['bookmarks'] } }]"  routerLinkActive="selected" class="tab bookmarks-tab">
+        <div class="tab-tile">
+            <i class="material-icons-outlined">bookmarks</i>
+        </div>
+    </a>
+
+    <a [routerLink]="[{ outlets: { outlet: ['todos'] } }]" routerLinkActive="selected" class="tab todos-tab">
+        <div class="tab-tile">
+            <i class="material-icons-outlined">check</i>
+        </div>
+    </a>
+
+    <a [routerLink]="[{ outlets: { outlet: ['notes'] } }]" routerLinkActive="selected" class="tab notes-tab">
+        <div class="tab-tile">
+            <i class="material-icons-outlined">notes</i>
+        </div>
+    </a>
+</div>
